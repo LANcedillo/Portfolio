@@ -1,4 +1,4 @@
-import {LinkedInIcon} from '../components/icons/LinkedIn.astro';
+import {LinkedInIcon} from '../components/icons/SocialMedia';
 
 
 export const socialLinks = [
