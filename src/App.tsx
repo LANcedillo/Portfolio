@@ -23,7 +23,7 @@ export default function App() {
             {/* Si el usuario entra a una ruta que no existe, lo mandamos a Home */}
             <Route path="*" element={<Home />} />
           </Routes>
-          <Footer />
+          <Footer iconClass="w-6 h-6" size={24} />
         </div>
       </div>
     </HashRouter>

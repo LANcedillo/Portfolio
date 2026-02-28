@@ -1,5 +1,9 @@
 import { LinkedInIcon, GitHubIcon,PortfolioIcon } from "./icons/SocialMedia";
-export const Footer = (iconClass="w-6 h-6" ,size?: number) => {
+interface FooterProps {
+  iconClass: string;
+  size: number;
+}
+export const Footer = ({ iconClass, size }: FooterProps) => {
   return (
     <footer className="bg-gray-100 dark:bg-gray-900 text-center py-6 mt-12">
         <div className="flex justify-center gap-4 mb-4">
