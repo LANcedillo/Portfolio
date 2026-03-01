@@ -1,6 +1,9 @@
 import profileImage from '../assets/Portafolio.jpeg'
+import { useState } from 'react';
 
 export const Hero = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <section id="about me" className="relative pt-28 pb-16 md:pt-48 md:pb-32 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
@@ -22,7 +25,7 @@ export const Hero = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
             <button className="w-full sm:w-auto px-8 py-4 bg-blue-600 text-white rounded-2xl font-bold hover:bg-blue-700 shadow-lg shadow-blue-500/25 active:scale-95 transition-all">
-              <a href="#proyectos" onClick={() => setIsOpen(false)} className="text-lg font-medium dark:text-white">Ver proyectos</a>
+              <a href="#proyectos" onClick={() => setIsOpen(false)}  className="text-lg font-medium dark:text-white">Ver proyectos</a>
             </button>
             <button className="w-full sm:w-auto px-8 py-4 border-2 border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white rounded-2xl font-bold hover:bg-slate-50 dark:hover:bg-slate-900 transition-all">
               Contacto

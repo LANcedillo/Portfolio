@@ -1,4 +1,4 @@
-import type {IconProps} from '../components/icons'
+// import type {IconProps} from '../components/icons'
 
 export interface Project {
   id: number;
@@ -7,7 +7,7 @@ export interface Project {
   tech: string[];
   description: string;
   link: string;
-  image?: IconProps; // Opcional, por si quieres agregar una imagen representativa
+  // image?: IconProps; // Opcional, por si quieres agregar una imagen representativa
 }
 
 export const projectsData: Project[] = [
