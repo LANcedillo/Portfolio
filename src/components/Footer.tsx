@@ -1,4 +1,4 @@
-import { LinkedInIcon, GitHubIcon,PortfolioIcon } from "./icons/SocialMedia";
+import { LinkedInIcon, GitHubIcon } from "./icons/SocialMedia";
 interface FooterProps {
   iconClass: string;
   size: number;
@@ -13,9 +13,9 @@ export const Footer = ({ iconClass, size }: FooterProps) => {
             <a href="https://github.com/LANcedillo" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-blue-500 transition">
                 <GitHubIcon className={iconClass} size={size} />
             </a>
-            <a href="/" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-blue-500 transition">
+            {/* <a href="/" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-blue-500 transition">
                 <PortfolioIcon className={iconClass} size={size} />
-            </a>
+            </a> */}
         </div>
         <p className="text-sm text-gray-600 dark:text-gray-400">
             &copy; {new Date().getFullYear()} Luis Ángel Cedillo. Construido con React + TypeScript.

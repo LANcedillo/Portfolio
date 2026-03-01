@@ -2,7 +2,8 @@
 import {Hero} from '../components/Hero';
 import {ProjectGallery} from '../components/ProjectGallery';
 import {Experience} from '../components/Experience';
-
+import {Contact} from '../components/Contact';
+import { SkillsSection } from '../components/SkillsSection';
 export const Home = () => {
   return (
     <main className="relative">
@@ -17,6 +18,12 @@ export const Home = () => {
         <div className="h-px bg-slate-200 dark:bg-slate-800" />
       </section>
 
+      <SkillsSection />
+
+      <section className="max-w-7xl mx-auto px-4">
+        <div className="h-px bg-slate-200 dark:bg-slate-800" />
+      </section>
+
       <ProjectGallery />
 
       <section className="max-w-7xl mx-auto px-4">
@@ -24,8 +31,12 @@ export const Home = () => {
       </section>
 
       <Experience />
-      
-      {/* Aquí podrías añadir una sección de 'Tecnologías' o 'Habilidades' más adelante */}
+
+      <section className="max-w-7xl mx-auto px-4">
+        <div className="h-px bg-slate-200 dark:bg-slate-800" />
+      </section>
+
+      <Contact />   
     </main>
   );
 };
