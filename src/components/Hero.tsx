@@ -26,7 +26,7 @@ export const Hero = () => {
               <a href="#proyectos" className="text-lg font-medium dark:text-white">Ver proyectos</a>
             </button>
             <button className="w-full sm:w-auto px-8 py-4 border-2 border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white rounded-2xl font-bold hover:bg-slate-50 dark:hover:bg-slate-900 transition-all">
-              Contacto
+              <a href="#contacto" className="text-lg font-medium dark:text-white">Contacto</a>
             </button>
           </div>
         </div>

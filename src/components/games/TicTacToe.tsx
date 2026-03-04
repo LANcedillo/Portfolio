@@ -1,4 +1,4 @@
-// src/components/games/TicTacToe.tsx
+
 import { useState } from 'react';
 
 export const TicTacToe = () => {

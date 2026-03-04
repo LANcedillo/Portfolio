@@ -4,6 +4,7 @@ import {ProjectGallery} from '../components/ProjectGallery';
 import {Experience} from '../components/Experience';
 import {Contact} from '../components/Contact';
 import { SkillsSection } from '../components/SkillsSection';
+import { SoftSkillsBento } from '../components/SoftSkillsBento';
 export const Home = () => {
   return (
     <main className="relative">
@@ -15,6 +16,12 @@ export const Home = () => {
       <Hero />
       
       <section className="max-w-7xl mx-auto px-4">
+        <div className="h-px bg-slate-200 dark:bg-slate-800" />
+      </section>
+
+      <SoftSkillsBento />
+
+            <section className="max-w-7xl mx-auto px-4">
         <div className="h-px bg-slate-200 dark:bg-slate-800" />
       </section>
 

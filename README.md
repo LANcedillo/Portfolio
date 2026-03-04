@@ -1,77 +1,64 @@
-# React + TypeScript + Vite
+# 🚀 LACN - Portfolio Profesional
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Bienvenido a mi portafolio! Esta es una aplicación web construida con **React + TypeScript + Tailwind CSS**, diseñada para mostrar mis proyectos, habilidades técnicas y juegos interactivos integrados usando context.
 
-Currently, two official plugins are available:
+[![GitHub Pages Deployment](https://img.shields.io/badge/Deploy-GitHub_Pages-blue?style=flat-square&logo=github)](https://lancedillo.github.io/Portfolio/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Stack Tecnológico
 
-## React Compiler
+- **Frontend:** React 18, TypeScript, Tailwind CSS v4.
+- **Routing:** React Router Dom (HashRouter para compatibilidad con GH Pages).
+- **Estado Global:** Context API + useReducer (Carrito de compras y preferencias).
+- **Herramientas de Construcción:** Vite.
+- **Iconografía:** Lucide React & Custom SVGs de ([text](https://www.svgrepo.com/)).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Características Principales
 
-## Expanding the ESLint configuration
+- **Diseño Responsivo:** Adaptado para móviles, tablets y escritorio con enfoque Mobile-First.
+- **Modo Oscuro/Claro:** Implementado con persistencia de estado.
+- **Mini-Juegos Integrados:**
+  - `TicTacToe`: Lógica clásica de turnos.
+  - `Space Invaders`: Renderizado en Canvas con detección de colisiones AABB.
+- **Sistema de Skills:** Bento Grid con barras de progreso animadas y micro-interacciones.
+- **Carrito de Compras:** Simulación de selección de servicios/skills utilizando arquitectura Flux (Context).
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🎮 Cómo ejecutar localmente
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1. Clona el repositorio:
+   ```bash
+   git clone [https://github.com/LANcedillo/Portfolio.git](https://github.com/LANcedillo/Portfolio.git)
+   ```
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2. Entra a la carpeta del proyecto::
+   ```bash
+  cd Portfolio
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+3. Entra a la carpeta del proyecto::
+   ```bash
+  npm install
 ```
-# Formulario
 
-Formspree
+4. Inicia el servidor de desarrollo:
+   ```bash
+  npm run dev
+  ```
+
+
+## 📂 Estructura del Proyecto
+src/
+├── components/     # Componentes reutilizables (Navbar, Skills, Games)
+├── context/        # Lógica del Carrito (Context & Reducer)
+├── data/           # Configuración de proyectos y habilidades
+├── pages/          # Vistas principales (Home)
+├── routes/         # Configuración centralizada de navegación
+└── assets/         # Imágenes e iconos SVG
+
+## 📧 Contacto
+
+¿Tienes alguna propuesta o quieres charlar sobre tecnología?
+
+LinkedIn: Tu Perfil
+Web: lancedillo.github.io/Portfolio/
+
+

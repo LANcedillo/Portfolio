@@ -29,6 +29,7 @@ const checkCollision = (bullet: {x: number, y: number}, enemy: {x: number, y: nu
     // Generar enemigos iniciales
     for(let i=0; i<5; i++) enemies.push({x: i * 80 + 50, y: 50});
 
+    
     const gameLoop = () => {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
